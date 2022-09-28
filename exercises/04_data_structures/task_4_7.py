@@ -16,3 +16,12 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+mac1 = mac.split(':')[0]
+mac2 = mac.split(':')[1]
+mac3 = mac.split(':')[2]
+mac11 = bin(int(mac1, 16))
+mac21 = bin(int(mac2, 16))
+mac31 = bin(int(mac3, 16))
+macs = mac11 + mac21 + mac31
+strmac = str(macs)
+print(strmac[2:])
